@@ -10,4 +10,4 @@ if (val > num) {
     message = val + " is less than " + num;
 }
 console.log(message);
-console.log(message);
+
