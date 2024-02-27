@@ -44,6 +44,7 @@ favoriteFruits = ["grapefruit", "orange", "lemon"];
 favoriteFruits.push("tangerine");
 
 let lengthOfFavoriteFruits = favoriteFruits.push("lime");
+// favoriteFruits.push("apple");
 console.log(lengthOfFavoriteFruits);
 console.log(favoriteFruits);
 
@@ -59,18 +60,19 @@ console.log(arr7);
 let arr8 = arr7.concat(7, 8, 9);
 console.log(arr8);
 
-arr8.pop();
+arr8.pop(); //removes the last array
 console.log(arr8);
 
-arr8.shift();
+arr8.shift();   //takes away the first array
 console.log(arr8);
 
-arr8.splice(1, 3);
+arr8.splice(1, 3);  //removes 2 3 and 4 from the array
 console.log(arr8);
 
 delete arr8[0];
 console.log(arr8); 
 
+// let e = 6||8;
 let findValue = arr8.find(() => e === 6);
 let findValue2 = arr8.find(() => e === 8);
 console.log(findValue, findValue2);
@@ -82,7 +84,7 @@ console.log(findIndex, findIndex2, findIndex3);
 
 let animals = ["dog", "horse", "cat", "platypus", "dog"]
 let lastDog = animals.lastIndexOf("dog");
-console.log(lastDog);
+console.log(lastDog);       //note come back later 
 
 
 let names = ["James", "Alicia", "Fatiha", "Maria", "Bert"];

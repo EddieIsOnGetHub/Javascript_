@@ -9,7 +9,7 @@ let dog = { dogName: "JavaScript",
 let dogColor1 = dog["color"];
 let dogColor2 = dog.color;
 
-
+// dog["color"]
 dog["color"] = "blue";
 dog.weight = 2.3;
 
