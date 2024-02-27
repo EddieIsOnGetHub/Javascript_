@@ -1,7 +1,7 @@
-const myArr = ["Rock", "Paper", "Scissors"];
+const RPS = ["Rock", "Paper", "Scissors"];
 let computer = Math.floor(Math.random() * 3); 
 let player = Math.floor(Math.random() * 3); 
-let message = "player " + myArr[player] + " vs computer " + myArr[computer] + " "; 
+let message = "player " + RPS[player] + " vs computer " + RPS[computer] + " "; 
 if (player === computer) { 
     message += "it's a tie"; 
 } else if (player > computer) { 
