@@ -1,4 +1,4 @@
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 11; i++) {
   console.log(i);
 }
 
@@ -7,10 +7,10 @@ for (let i = 0; i < 100; i++) {
   arr.push(i);
 }
 
-let arr = [];
-for (let i = 0; i < 100; i = i + 2) {
-  arr.push(i);
-}
+// let arr = [];
+// for (let i = 0; i < 100; i = i + 2) {
+//   arr.push(i);
+// }
 
 let arrOfArrays = [];
 for (let i = 0; i < 3; i++) {
