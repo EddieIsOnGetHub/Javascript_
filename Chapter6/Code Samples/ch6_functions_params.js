@@ -1,51 +1,61 @@
-function hiThere() {
-  let you = prompt("What's your name? ");
-  console.log("Hello", you, "!");
-}
+// function hiThere() {
+//   let you = prompt("What's your name? ");
+//   console.log("Hello", you, "!");
+// }
 
-hiThere();
+// hiThere();
 
-console.log("this is an argument");
-prompt("argument here too");
+// console.log("this is an argument");
+// prompt("argument here too");
 
-let arr = [];
-arr.push("argument");
+// let arr = [];
+// arr.push("argument");
 
-function addTwoNumbers(x, y) {
-  console.log(x + y);
-}
+// function addTwoNumbers(x, y) {
+//   console.log(x + y);
+// }
 
-addTwoNumbers(3, 4);
-addTwoNumbers(12, -90);
+// addTwoNumbers(3, 4);
+// addTwoNumbers(12, -90);
 
-function myFunc(param1, param2) {
-  // code of the function;
-}
+// function myFunc(param1, param2) {
+//   // code of the function;
+// }
 
-myFunc("arg1", "arg2");
+// myFunc("arg1", "arg2");
 
-function addTwoNumbers(x = 2, y = 3) {
-  console.log(x + y);
-}
+// function addTwoNumbers(x = 2, y = 3) {
+//   console.log(x + y);
+// }
 
-addTwoNumbers();
-addTwoNumbers(6, 6);
-addTwoNumbers(10);
+// addTwoNumbers();
+// addTwoNumbers(6, 6);
+// addTwoNumbers(10);
 
-let favoriteSubject = prompt("What is your favorite subject?");
+// let favoriteSubject = prompt("What is your favorite subject?");
 
-let result = addTwoNumbers(4, 5);
-console.log(result);
+// let result = addTwoNumbers(4, 5);
+// console.log(result);
 
-function addTwoNumbers(x, y) {
-  return x + y;
-}
+// function addTwoNumbers(x, y) {
+//   return x + y;
+// }
 
-let results = [];
+// let results = [];
 
-for (let i = 0; i < 10; i++) {
-  let result = addTwoNumbers(i, 2 * i);
-  results.push(result);
-}
+// for (let i = 0; i < 10; i++) {
+//   let result = addTwoNumbers(i, 2 * i);
+//   results.push(result);
+// }
 
-console.log(results);
+// console.log(results);
+
+
+// let doingstuff = function(x){console.log(x)};
+
+// let doingstuff = x => console(x);
+
+//does the same thing just in a different way
+
+const arr = ["squirrel", "alpaca", "buddy"];
+arr.forEach(e => console.log(e)); // will apply to each element within the array 

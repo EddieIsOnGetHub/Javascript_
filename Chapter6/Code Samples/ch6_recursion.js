@@ -1,9 +1,11 @@
-function getRecursive(nr) {
-  console.log(nr);
-  getRecursive(--nr);
-}
+// function getRecursive(nr) {
+//   console.log(nr);
+//   if (nr > -12){
+//     getRecursive(--nr);
+//   }
+// }
 
-getRecursive(3);
+// getRecursive(0);
 
 function logRecursive(nr) {
   console.log("Started function:", nr);
@@ -17,19 +19,19 @@ function logRecursive(nr) {
 
 logRecursive(3);
 
-function getRecursive(nr) {
-  console.log(nr);
-  if (nr > 0) {
-    getRecursive(--nr);
-  }
-}
+// function getRecursive(nr) {
+//   console.log(nr);
+//   if (nr > 0) {
+//     getRecursive(--nr);
+//   }
+// }
 
-getRecursive(3);
+// getRecursive(3);
 
-function calcFactorial(nr) {
-  if (nr === 0) {
-    return 1;
-  } else {
-    return nr * calcFactorial(--nr);
-  }
-}
+// function calcFactorial(nr) {
+//   if (nr === 0) {
+//     return 1;
+//   } else {
+//     return nr * calcFactorial(--nr);
+//   }
+// }
