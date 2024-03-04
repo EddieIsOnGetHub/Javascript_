@@ -10,15 +10,16 @@
 // let dog = new Dog("JavaScript", 2.4, "brown", "chihuahua");
 // console.log(dog.dogName, "is a", dog.breed, "and weighs", dog.weight, "kg.");
 
-class Person {
-  constructor(firstname, lastname) {
-    this.firstname = firstname;
-    this.lastname = lastname;
-  }
-}
+// class Person {
+//   constructor(firstname, lastname) {
+//     this.firstname = firstname;
+//     this.lastname = lastname;
+//   }
+// }
 
-let p = new Person("Maaike", "van Putten");
-console.log("Hi", p.firstname);
+
+// let p = new Person("Maaike", "van Putten");
+// console.log("Hi", p.firstname);
 
 // let p = new Person("Maaike");
 // console.log("Hi", p.firstname, p.lastname);
@@ -64,18 +65,35 @@ console.log("Hi", p.firstname);
 //     super(color, currentSpeed, maxSpeed);
 //     this.fuel = fuel;
 //   }
+//   doWheelie(){
+//     console.log(`driving on one wheel`);
+//   }
 // }
+
 // let motor = new Motor("Black", 0, 250, "gasoline");
 // console.log(motor.color);
 // motor.accelerate(50);
 // motor.move();
+// motor.doWheelie();
+
 
 // class Person {
 //   #firstname;
 //   #lastname;
 //   constructor(firstname, lastname) {
-//     this.#firstname = firstname;
-//     this.#lastname = lastname;
+//     if (firstname.length > 1) {
+//       this.#firstname = firstname;
+//       console.log(this.firstname);
+//     } else {
+//       console.log(`first name is not allowed`);
+//     }
+  
+//     if (lastname.length > 1) {
+//       this.lastname.length = lastname;
+//       console.log(this.lastname);
+//     }else {
+//       console.log(`last name is not allowed`)
+//     }
 //   }
 
 //   get firstname() {
@@ -95,24 +113,25 @@ console.log("Hi", p.firstname);
 //   }
 // }
 
-// let p = new Person("Maria", "Saga");
-// console.log(p.firstname);
+// let firstPerson = new Person("Maria", "Saga");
+// console.log(firstPerson.firstname);
 
-// class Person {
-//   constructor(firstname, lastname) {
-//     this.firstname = firstname;
-//     this.lastname = lastname;
-//   }
+class Person {
+  constructor(firstname, lastname, favcolor) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.favcolor = favcolor;
+  }
 
-//   greet() {
-//     console.log("Hi there!");
-//   }
-// }
+  greet() {
+    console.log("Hi there!");
+  }
+}
 
-// Person.prototype.introduce = function () {
-//   console.log("Hi, I'm", this.firstname);
-// };
+Person.prototype.introduce = function () {
+  console.log("Hi, I'm", this.firstname);
+};
 
-// let p = new Person("Maria", "Saga");
-// p.introduce();
+let p = new Person("Maria", "Saga", "blue");
+p.introduce();
 
