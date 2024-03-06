@@ -17,6 +17,6 @@ function scramble(value) {
     }
 
     return temp;
-    
+
 }
 console.log(scramble(str));

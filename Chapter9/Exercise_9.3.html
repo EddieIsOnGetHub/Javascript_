@@ -1,15 +1,29 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html>
 
-<div class="output"></div>
-    <script>
-    	const output = document.querySelector('.output');
-    	output.textContent = "Hello World";
-    	output.classList.add("red");
-    	output.id = "tester";
-    	output.style.backgroundColor = "red";
-    	console.log(document.URL);
-    	output.textContent = document.URL;
-    </script>
+	<Head>
+		<title>
+			9.3 Exercise
+		</title>
+	</Head>
+	<style>
+		.blue{
+			background-color: blue;
+		}
+	</style>
+<body>
+
+	<div class="output"></div>
+	<script>
+		const output = document.querySelector('body');
+		output.textContent = "Hello World";
+		output.classList.add("blue");
+		output.id = "tester";
+		// output.style.backgroundColor = "red";
+		console.log(document.URL);
+		output.textContent = document.URL;
+	</script>
+
+</body>
 
 </html>
