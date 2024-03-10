@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html>
 <head>
     <title>JS Tester</title>
@@ -14,6 +14,28 @@
         function message(val, event) {
             console.log(event);
             console.log(val);
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", (e) =>{
+            message("Document ready", e);
+        });
+        window.onload = (e)=>{
+            message("windwo ready", e);
+        }
+        function message (mes1, event1){
+            console.log(mes1);
+            console.log(event1);
+
         }
     </script>
 </body>
