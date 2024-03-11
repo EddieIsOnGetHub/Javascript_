@@ -10,6 +10,7 @@
     <script>
         const eles = document.querySelectorAll("input");
         const output = document.querySelector(".output");
+        
         eles.forEach(el => {
             el.addEventListener("keydown", (e) => {
                 if (!isNaN(e.key)) {

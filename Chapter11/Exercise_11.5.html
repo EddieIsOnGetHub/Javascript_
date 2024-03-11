@@ -20,9 +20,10 @@
         const log = [];
         btn1.addEventListener("click", tracker);
         btn2.addEventListener("click", tracker);
-        btn3.addEventListener("click", (e) => {
+        btn3.addEventListener("click", (e) => {  // NOTE! what does e stand for 
             console.log(log);
         });
+
         function tracker(e) {
             output.textContent = myInput.value;
             const ev = e.target;
@@ -32,6 +33,7 @@
                 type: ev.type,
                 class: ev.className,
                 tag: ev.tagName
+                
             };
             log.push(temp);
             myInput.value = "";

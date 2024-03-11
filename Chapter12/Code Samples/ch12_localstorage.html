@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="stored"></div>
+    <script>
+        let message = "Hello storage!";
+        localStorage.setItem("example", message);
+        if (localStorage.getItem("example")) {
+        document.getElementById("stored").innerHTML =
+        localStorage.getItem("example");
+        }   
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Json</h1>
+    <script>
+        let dog = {
+            "name": "wiesje",
+            "breed": "dachshund"
+        };
+        let strdog = JSON.stringify(dog);
+        console.log(typeof strdog);
+        console.log(strdog);
+
+
+
+
+
+        // let str = "{\"name\": \"Maaike\", \"age\": 30}";
+        // let obj = JSON.parse(str);
+        // console.log(obj.name, "is", obj.age);
+        // console.log(obj)
+    </script>
+</body>
+
+</html>

@@ -20,7 +20,9 @@
             Drag Me Please!
         </div>
     </div>
+
     <div class="box">2</div>
+
     <script>
         const dragme = document.querySelector("#dragme");
         dragme.addEventListener("dragstart", (e) => {
@@ -29,6 +31,7 @@
         dragme.addEventListener("dragend", (e) => {
             dragme.style.opacity = "";
         });
+
         const boxes = document.querySelectorAll(".box");
         boxes.forEach(box => {
             box.addEventListener("dragenter", (e) => {
@@ -43,10 +46,11 @@
             });
             box.addEventListener("drop", (e) => {
                 e.preventDefault();
-                console.log("dropped");
+                // console.log("dropped"); //drag and drop
                 e.target.appendChild(dragme);
             });
         });
+
         function dragStart(e) {
             console.log("Started");
         }
