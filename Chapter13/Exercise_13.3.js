@@ -28,6 +28,7 @@ function checker(val) {
         }
     });
 }
+
 checker(5)
     .then((data) => { console.log(data); })
     .catch((err) => { console.error(err); });
