@@ -21,6 +21,7 @@
     </style>
 </head>
 <body>
+
     <form name="myform"> Email:
         <input type="text" name="email"> <span class="error hide"></span>
         <br> Password:
@@ -55,6 +56,7 @@
                         addError(el, "Required Field", tempName);
                         error = true;
                     }
+
                     if (tempName == "email") {
                         let exp = /([A-Za-z0-9._-]+@[A-Za-z0-9._-]+\.[A-Za-z0-9]+)\w+/;
                         let result = exp.test(el.value);
@@ -63,6 +65,7 @@
                             error = true;
                         }
                     }
+                    
                     if (tempName == "password") {
                         let exp = /[A-Za-z0-9]+$/;
                         let result = exp.test(el.value);
@@ -90,7 +93,7 @@
             el.style.borderColor = "red";
             el.focus();
         }
-        
+
     </script>
 
 </body>
