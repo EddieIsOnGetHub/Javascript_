@@ -29,18 +29,23 @@
         <input type="text" name="userName"> <span class="error hide"></span>
         <br>
         <input type="submit" value="Sign Up"> </form>
+
     <script>
+
         const myForm = document.querySelector("form");
         const inputs = document.querySelectorAll("input");
         const errors = document.querySelectorAll(".error");
         const required = ["email", "userName"];
+
         myForm.addEventListener("submit", validation);
         function validation(e) {
+
             let data = {};
             e.preventDefault();
             errors.forEach(function (item) {
                 item.classList.add("hide");
             });
+
             let error = false;
             inputs.forEach(function (el) {
                 let tempName = el.getAttribute("name");
@@ -85,6 +90,7 @@
             el.style.borderColor = "red";
             el.focus();
         }
+        
     </script>
 
 </body>
