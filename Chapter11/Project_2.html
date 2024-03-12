@@ -19,6 +19,7 @@
             background-color: #ddd;
         }
     </style>
+
 </head>
 <body>
     <ul class="stars">
@@ -27,8 +28,15 @@
         <li class="star">&#10029;</li>
         <li class="star">&#10029;</li>
         <li class="star">&#10029;</li>
+        <li class="star">&#10029;</li>
+        <li class="star">&#10029;</li>
+        <li class="star">&#10029;</li>
+        <li class="star">&#10029;</li>
+        <li class="star">&#10029;</li>
     </ul>
+
     <div class="output"></div>
+
     <script>
         const starsUL = document.querySelector(".stars");
         const output = document.querySelector(".output");
@@ -37,6 +45,7 @@
             star.starValue = (index + 1);
             star.addEventListener("click", starRate);
         });
+
         function starRate(e) {
             output.innerHTML = `You Rated this ${e.target.starValue} stars`;
             stars.forEach((star, index) => {
