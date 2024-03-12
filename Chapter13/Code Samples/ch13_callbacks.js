@@ -1,12 +1,12 @@
-function doSomething(callback) {  
-    callback();
-}
+// function doSomething(callback) {  
+//     callback();
+// }
 
-function sayHi() {
-    console.log("Hi!");
-}
+// function sayHi() {
+//     console.log("Hi!");
+// }
 
-doSomething(sayHi);
+// doSomething(sayHi);
 
 
 function judge(grade) {
@@ -51,13 +51,18 @@ function getGrade(score, callback) {
 }
 
 getGrade(85, judge);
+let i = 0;
 
-setInterval(500, encourage);
+// let loop = setInterval(500, encourage);
 
-function encourage() {
-    console.log("You're doing great, keep going!");
-}
+// function encourage() {
+//     console.log("You're doing great, keep going!");
+//     if (i > 5) {
+//         clearInterval(loop);
+//     }i++;
+// };
 
-setInterval(function () {
-    console.log("You're doing great, keep going!");
-}, 500)
+// setInterval(function () {
+//     console.log("You're doing great, keep going!"); //it will loop ever 
+// }, 500)
+
