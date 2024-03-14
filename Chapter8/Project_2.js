@@ -1,10 +1,10 @@
-const endDate = "Sept 1 2022";
+const endDate = "03 15 2024";
 
 function countdown() {
 
     const total = Date.parse(endDate) - new Date();
     const days = Math.floor(total / (1000 * 60 * 60 * 24));
-    const hrs = Math.floor((total / (1000 * 60 * 60)) % 24);
+    const hrs = Math.floor((total / (1000 * 60 * 60)) % 24);  // % returns the remaining element 
     const mins = Math.floor((total / 1000 / 60) % 60);
     const secs = Math.floor((total / 1000) % 60);
     
@@ -24,7 +24,7 @@ function update() {
 
     for (const property in temp)
      {
-        output += (`${property}: ${temp[property]} `);
+        output += (`${property}: ${temp[property]} `); //note  
     }
     console.log(output);
     setTimeout(update, 1000);

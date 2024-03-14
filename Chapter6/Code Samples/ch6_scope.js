@@ -52,14 +52,14 @@ function doingStuff() {
 
 doingStuff();
 
-let x = "global";
+// let x = "global";
 
-function doingStuff() {
-  let x = "local";
-  console.log(x);
-}
+// function doingStuff() {
+//   let x = "local";
+//   console.log(x);
+// }
 
-doingStuff();
+// doingStuff();
 
 var x = "global";
 
