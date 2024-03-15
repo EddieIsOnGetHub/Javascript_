@@ -21,3 +21,4 @@ const val3 = new Menu(3, 2); // 70
 console.log(value1.total);
 console.log(value2.total);
 console.log(val3.total);
+

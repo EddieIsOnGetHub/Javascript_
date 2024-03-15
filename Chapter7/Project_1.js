@@ -25,3 +25,4 @@ workers.forEach((person) => {
     console.log(person.details());
 });
 
+
