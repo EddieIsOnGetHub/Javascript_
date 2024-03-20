@@ -39,9 +39,11 @@
         const required = ["email", "userName"];
 
         myForm.addEventListener("submit", validation);
+
         function validation(e) {
 
             let data = {};
+            
             e.preventDefault();
             errors.forEach(function (item) {
                 item.classList.add("hide");
